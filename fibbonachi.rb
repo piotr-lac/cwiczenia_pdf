@@ -8,29 +8,49 @@
 # ani jednego wiecej ani jednego mniej
 
 def Fibo(n)
-a = 0
-b = 1
-i = 2
-z = [a,b]
-
-while (i+2)<n
-	a = a + b
-	b = a + b
-	z << a
-	z << b
-	i+=1
+	a = 0
+	b = 1
+	
+	(n/2).times do
+		puts a 
+		puts b 
+		a = a + b
+		b = a + b
+	end
 end
 
-i=0
-while i<n
-	puts "#{i+1} element ciągu Fibo to:  #{z[i]}"
-	i+=1
-end
-end
-
-puts "podaj ile wyświetlić pierwszych elementów ciągu Fibbonaciego "
+puts "podaj ile wyświetlić pierwszych elementów ciągu Fibbonaciego (parzyście)"
 f = gets.chomp.to_i
 puts
 
 Fibo(f)
+
+# -- druga metoda, wyrzuca konkretną ilość elementów Fibo (nie musi być parzyście)
+
+# def Fibo(n)
+# a = 0
+# b = 1
+# i = 2
+# z = [a,b]
+
+# while (i+2)<n
+# 	a = a + b
+# 	b = a + b
+# 	z << a
+# 	z << b
+# 	i+=1
+# end
+
+# i=0
+# while i<n
+# 	puts "#{i+1} element ciągu Fibo to:  #{z[i]}"
+# 	i+=1
+# end
+# end
+
+# puts "podaj ile wyświetlić pierwszych elementów ciągu Fibbonaciego "
+# f = gets.chomp.to_i
+# puts
+
+# Fibo(f)
 

@@ -1,6 +1,13 @@
 # Napisz funkcję, która liczy sumę parzystych liczb z zakresu od 1..n. Spróbuj stwórzyć
 # kilka wersji:
+# • korzystając z wybranej pętli, np. inject
+
+puts "podaj liczbę - licznymy metoda inject"
+n = gets.chomp.to_i
+puts (0..n).inject{|x,y| y%2==0 ? x+y : x}
+
 # • korzystając z wybranej pętli, np. while
+
 
 puts "podaj liczbę - licznymy metoda while"
 n = gets.chomp.to_i
