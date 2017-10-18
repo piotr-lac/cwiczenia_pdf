@@ -4,7 +4,7 @@
 
 puts "podaj liczbę - licznymy metoda inject"
 n = gets.chomp.to_i
-puts (0..n).inject{|x,y| y%2==0 ? x+y : x}
+puts (0..n).inject{|sum,y| y%2==0 ? sum+y : sum}
 
 # • korzystając z wybranej pętli, np. while
 

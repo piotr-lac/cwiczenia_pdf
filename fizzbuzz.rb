@@ -4,7 +4,8 @@
 # “FizzBuzz”.
 
 
-(1..100).step do |i|
+100.times do |i|
+	next if i==0
 	if (i%3 == 0) && (i%5 == 0)
 		puts "FizzBuzz"
 	elsif i%3 == 0

@@ -5,7 +5,8 @@
 
 def find_index(array, value)
 
-puts array.index(value).nil? ? "not found" : array.index(value)
+k= array.index(value)
+puts k.nil? ? "not found" : k
 
 end
 
