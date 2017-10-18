@@ -11,11 +11,9 @@ def Fibo(n)
 	a = 0
 	b = 1
 	
-	(n/2).times do
+	(n).times do
 		puts a 
-		puts b 
-		a = a + b
-		b = a + b
+		a, b = b, a + b
 	end
 end
 
@@ -24,6 +22,25 @@ f = gets.chomp.to_i
 puts
 
 Fibo(f)
+
+
+# def Fibo(n)
+# 	a = 0
+# 	b = 1
+	
+# 	(n/2).times do
+# 		puts a 
+# 		puts b 
+# 		a = a + b
+# 		b = a + b
+# 	end
+# end
+
+# puts "podaj ile wyświetlić pierwszych elementów ciągu Fibbonaciego (parzyście)"
+# f = gets.chomp.to_i
+# puts
+
+# Fibo(f)
 
 # -- druga metoda, wyrzuca konkretną ilość elementów Fibo (nie musi być parzyście)
 
